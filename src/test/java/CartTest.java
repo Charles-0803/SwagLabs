@@ -1,9 +1,12 @@
 import basetests.BaseSetup;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+@Epic("Cart Feature")
+@Feature("Add to Cart")
 public class CartTest extends BaseSetup{
     @Test
     public void AddSingleProductToCart() {

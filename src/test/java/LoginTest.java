@@ -1,7 +1,12 @@
 import basetests.BaseSetup;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.Test;
 
+@Epic("Login Feature")
+@Feature("Login Page")
 public class LoginTest extends BaseSetup {
     @Test
     public void LoginPage_Accessibility() {

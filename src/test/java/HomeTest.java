@@ -1,8 +1,12 @@
 import basetests.BaseSetup;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+@Epic("Homre Feature")
+@Feature("Home Page")
 public class HomeTest extends BaseSetup {
     @Test
     public void HomePage_Accessibility() {

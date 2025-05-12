@@ -1,9 +1,13 @@
 import basetests.BaseSetup;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+@Epic("Checkout Feature")
+@Feature("Checkout Process")
 public class CheckoutTest extends BaseSetup {
     @Test
     public void CheckoutButtonVisible() {
