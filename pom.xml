@@ -15,6 +15,7 @@
         <aspectj.version>1.9.21</aspectj.version>
         <allure.version>2.25.0</allure.version>
         <junit.version>5.10.2</junit.version>
+        <webdrivermanager.version>5.6.3</webdrivermanager.version>
     </properties>
 
     <dependencies>
@@ -47,6 +48,11 @@
             <version>${allure.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>${webdrivermanager.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -72,11 +78,6 @@
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-maven</artifactId>
                 <version>2.12.0</version>
-                <configuration>
-                    <reportVersion>${allure.version}</reportVersion>
-                    <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
-                    <reportDirectory>${project.build.directory}/allure-report</reportDirectory>
-                </configuration>
             </plugin>
         </plugins>
     </build>
