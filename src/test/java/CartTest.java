@@ -19,7 +19,7 @@ public class CartTest extends BaseSetup{
         assertEquals("1", homePage.getCartCount(), "Cart counter should show 1 after adding 1 item");
     }
     @Test
-    public void AddMultipleProductsToCart() {
+    public void AddMultipleProductToCart() {
         loginPage.setUsername("standard_user");
         loginPage.setPassword("secret_sauce");
         loginPage.clickLogin();
